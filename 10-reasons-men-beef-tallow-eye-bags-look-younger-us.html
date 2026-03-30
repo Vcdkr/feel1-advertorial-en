@@ -648,10 +648,12 @@
       .main-headline { font-size: 1.35rem; line-height: 1.25; margin-bottom: 28px; }
       .quote-box { padding: 16px 0; }
       .quote-box p { font-size: 1.05rem; }
-      .comp-wrap { overflow-x: hidden; }
-      .comp-table { font-size: 0.82rem; width: 100%; }
+      .comp-wrap { overflow: hidden; max-width: 100%; }
+      .comp-table { font-size: 0.82rem; width: 100%; max-width: 100%; table-layout: fixed; }
       .comp-table .th-other, .comp-table .td-other { display: none; }
-      .comp-table tbody td { padding: 12px 10px; white-space: normal; }
+      .comp-table .th-empty { width: 38%; }
+      .comp-table .th-feel1 { width: 62%; }
+      .comp-table tbody td { padding: 12px 10px; white-space: normal; word-break: break-word; }
       .comp-table tbody .td-label { white-space: normal; }
       .comp-table thead .th-feel1 { padding: 12px 10px; font-size: 0.82rem; border-radius: 8px 8px 0 0; }
       .reason-block { grid-template-columns: 1fr; gap: 14px; margin-bottom: 28px; }

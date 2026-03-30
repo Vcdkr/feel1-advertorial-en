@@ -648,14 +648,12 @@
       .main-headline { font-size: 1.35rem; line-height: 1.25; margin-bottom: 28px; }
       .quote-box { padding: 16px 0; }
       .quote-box p { font-size: 1.05rem; }
-      .comp-wrap { overflow: hidden; max-width: 100%; }
-      .comp-table { font-size: 0.82rem; width: 100%; max-width: 100%; table-layout: fixed; }
-      .comp-table .th-other, .comp-table .td-other { display: none; }
-      .comp-table .th-empty { width: 38%; }
-      .comp-table .th-feel1 { width: 62%; }
-      .comp-table tbody td { padding: 12px 10px; white-space: normal; word-break: break-word; }
-      .comp-table tbody .td-label { white-space: normal; }
-      .comp-table thead .th-feel1 { padding: 12px 10px; font-size: 0.82rem; border-radius: 8px 8px 0 0; }
+      .comp-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+      .comp-table { font-size: 0.78rem; min-width: 0; }
+      .comp-table tbody td { padding: 10px 8px; white-space: normal; }
+      .comp-table tbody .td-label { white-space: normal; min-width: 70px; }
+      .comp-table thead .th-feel1 { padding: 10px 8px; font-size: 0.78rem; }
+      .comp-table thead .th-other { font-size: 0.72rem; padding: 0 6px 10px; }
       .reason-block { grid-template-columns: 1fr; gap: 14px; margin-bottom: 28px; }
       .reason-image img { aspect-ratio: 1/1; object-fit: cover; }
       .reason-headline { font-size: 1.25rem; }

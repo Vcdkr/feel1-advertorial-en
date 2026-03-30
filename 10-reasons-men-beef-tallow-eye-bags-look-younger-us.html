@@ -27,7 +27,8 @@
       --green: #2d7a4f;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+
 
     body {
       font-family: var(--font-base);
@@ -77,8 +78,12 @@
       display: block;
     }
     @media (max-width: 640px) {
-      .logo-text-name { font-size: 0.9rem; letter-spacing: 0.08em; }
-      .logo-text-sub { font-size: 0.48rem; }
+      .logo-text-name { font-size: 0.82rem; letter-spacing: 0.06em; }
+      .logo-text-sub { font-size: 0.46rem; }
+    }
+    @media (max-width: 400px) {
+      .logo-text-name { font-size: 0.68rem; letter-spacing: 0.04em; }
+      .logo-text-sub { font-size: 0.42rem; }
     }
     .elementor-size-sm.kv-info-btn {
       display: inline-flex;
@@ -86,11 +91,11 @@
       background: transparent;
       color: var(--gold);
       font-family: var(--font-base);
-      font-size: 0.82rem;
+      font-size: 0.72rem;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 9px 20px;
+      padding: 7px 12px;
       border-radius: 4px;
       border: 1px solid rgba(255,220,117,0.5);
       text-decoration: none;
